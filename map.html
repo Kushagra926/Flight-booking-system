@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="map.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+</head>
+<body>
+    <h2>Flight Booking</h2>
+
+    <div class="booking-form">
+        <div class="form-group">
+            <label for="from">Departure:</label>
+            <select id="from">
+                <option value="" disabled selected>Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kashmir">Kashmir</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Goa">Goa</option>
+                <option value="Lucknow">Lucknow</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="to">Destination:</label>
+            <select id="to">
+                <option value="" disabled selected>Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kashmir">Kashmir</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Goa">Goa</option>
+                <option value="Lucknow">Lucknow</option>
+            </select>
+        </div>
+
+        <button type="button" id="bookNow">Book Now</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="map.js"></script>
+</body>
+</html>
